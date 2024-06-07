@@ -68,7 +68,7 @@ body {
 
 @media only screen and (max-width: 600px) {
   .upper-deck {
-    height: 3.5rem; /* Adjust height for mobile */
+    height: 5rem; /* Adjust height for mobile */
     padding: 0 1rem;
     display: flex;
     justify-content: center;
