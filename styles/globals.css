@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+.rubik {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+
+  font-family: Rubik 'sans-serif';
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+
+  background: radial-gradient(46.83% 46.83% at 50% 53.17%, rgba(3, 53, 103, 0.59) 0%, #000000 100%);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+.upper-deck{
+  background-color: #002147;
+  /* height: 48px; */
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 12px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.upper-deck-button{
+  /* border-color: white; */
+  color: white;
+  border-radius: 10px;
+  border: 1.5px solid #FFFFFF;
+  width: 100px;
+  height: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .upper-deck {
+    height: 3.5rem; /* Adjust height for mobile */
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270%; /* Add padding for better spacing */
+  }
+
+  .upper-deck-button {
+    width: 147px; /* Adjust width for mobile */
+    height: 36px; /* Adjust height for mobile */
+    font-size: 1.6rem; /* Adjust font size for better readability */
+  }
+  .text{
+    font-size: 1.6rem;
+  }
+}

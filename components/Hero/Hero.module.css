@@ -1,0 +1,246 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 48px;
+  margin-left: 70px;
+  margin-top: 5px;
+  padding: 16px;
+}
+
+.left {
+  min-width: 340px;
+  /* max-width: 360px; */
+  width: 64rem;
+}
+
+.heading {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 64px;
+}
+
+.description {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 20px 0;
+  color: #FFFFFF;
+}
+
+.liveOn {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 20px 0;
+  gap: 10px;
+}
+.company{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+  max-width: 370px;
+  object-fit: contain;
+  /* gap: 20px; */
+}
+.company img {
+  height: 30px;
+  margin-right: 10px;
+  
+}
+
+.liveOn img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.btnBlue {
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 15px;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(90deg, #002147 0%, #0487F3 100%);
+}
+
+.btnBlue:hover {
+  background: linear-gradient(90deg, #002147 0%, #2271b3 100%);
+}
+
+.btnWhite {
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 15px;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+}
+
+.footerText1 {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 16px;
+}
+
+.footerText2 {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 40px;
+}
+
+.carouselContainer {
+  width: 68%;
+  padding-top: 8px;
+  height: 480px; /* Increased height */
+}
+
+.carouselItem {
+  padding: 0; /* Remove padding */
+  height: 100%; /* Ensure items fill the container height */
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+}
+
+.carouselItem img {
+  /* max-width: 100%; */
+  /* max-height: 100%; */
+  height: 480px;
+  object-fit: cover;
+  /* border-radius: 10px; */
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+
+.carouselItem img:hover {
+  transform: scale(1.5);
+  z-index: 1000;
+  position: relative;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .container{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    gap: 135px;
+    margin-left: 38px;
+    margin-top: 20px;
+    padding: 16px;
+  }
+  .carouselContainer{
+    width: 64rem;
+    padding-top: 8px;
+    height: 420px;  
+  }
+  .heading{
+    font-size: 75px;
+    font-weight: 600;
+    line-height: 64px;
+    text-align: center;
+  }
+  .description{
+    font-size: 35px;
+    font-weight: 500;
+    margin: 45px 0;
+    color: #FFFFFF;
+    text-align: center;
+  }
+  .head{
+    font-size: 40px;
+  }
+  .liveOn img{
+    height: 100px;
+    margin-right: 10px;
+  }
+  .liveOn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+    gap: 20px;
+  }
+  .btnBlue{
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(90deg, #002147 0%, #0487F3 100%);
+    height: 12vh;
+  }
+  .btnWhite{
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 2em;
+    font-weight: bold;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+    height: 12vh;
+  }
+  .footerText1{
+    font-size: 30px;
+    line-height: 20px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 16px;
+    text-align: center;
+  }
+  .footerText2{
+    font-size: 30px;
+    line-height: 20px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 40px;
+    text-align: center;
+  }
+  .company{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    max-width: 380px;
+    object-fit: contain;
+    gap: 20px;
+    size: 42px;
+    margin-left: 135px;
+  }
+  .company img{
+    height: 70px;
+    margin-right: 10px;
+  }
+  .buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  /* .carouselItem img:hover {
+    transform: scale(1.2);
+  } */
+}
